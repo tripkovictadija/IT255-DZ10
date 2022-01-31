@@ -1,0 +1,24 @@
+<div class="container" >
+    <div class="row">
+      <div class="col-4"  *ngFor="let user of users">
+        
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Ime: {{user.name}}</li>
+          <li class="list-group-item">Username: {{user.username}}</li>
+          <li class="list-group-item">Email: {{user.email}}</li>
+          <li class="list-group-item">Web sajt: {{user.website}}</li>
+        </ul>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >
+          <div class="text-center" style="margin-bottom: 50px;" ><a  [routerLink]="['/users', user.id]" style="background-color: #a0c0f7; color: rgb(24, 2, 66); border: none;" class="btn btn-primary">Vise informacija</a></div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+  
+  
+  
+  
+  
+  

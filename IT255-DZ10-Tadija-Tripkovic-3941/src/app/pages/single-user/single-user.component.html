@@ -1,0 +1,16 @@
+<div class="container mt-5">
+   
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">ID: {{user?.id}}</li>
+        <li class="list-group-item">Ime: {{user?.name}}</li>
+        <li class="list-group-item">Username: {{user?.username}}</li>
+        <li class="list-group-item">Email: {{user?.email}}</li>
+        <li class="list-group-item">Web sajt: {{user?.website}}</li>
+      </ul>
+
+    <br>
+    <a  [routerLink]="['/users']" class="btn btn-primary" style="background-color: #aac6f5; color: rgb(11, 1, 44); border: none;">Svi korisnici</a>
+</div>
+
+
+  
